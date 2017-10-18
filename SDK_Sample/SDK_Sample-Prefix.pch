@@ -1,0 +1,44 @@
+//
+// Prefix header for all source files of the 'SDK_Sample_Rj4040' target in the 'SDK_Sample_Rj4040' project
+//
+
+#import <Availability.h>
+#import "Utilities.h"
+
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+#endif
+
+//#define kPrinterName @"Brother RJ-4040"
+//#define kPrinterName @"Brother PT-E550W"
+//#define kPrinterName @"Brother PT-P750W"
+#define kBROTHERPJ673   @"Brother PJ-673"
+
+#define	EXT_PJ673_ENCRYPT		0x01
+#define	EXT_PJ673_CARBON		0x02
+#define	EXT_PJ673_DASHPRINT		0x04
+#define	EXT_PJ673_NFD			0x08
+#define	EXT_PJ673_EOP			0x10
+#define	EXT_PJ673_EPR			0x20
+
+
+#define kPrinterCapabilitiesKey     @"Capabilities"
+#define kPrinterPaperSizeKey        @"PaperSize"
+
+#define kFuncDensity                @"FuncDensity"
+#define kFuncCustomPaper            @"FuncCustomPaper"
+#define kFuncAutoCut                @"FuncAutoCut"
+#define kFuncChainPrint             @"FuncChainPrint"
+#define kFuncHalfCut                @"FuncHalfCut"
+#define kFuncSpecialTape            @"FuncSpecialTape"
+#define kFuncCopies                 @"FuncCopies"
+#define kFuncCarbonPrint            @"FuncCarbonPrint"
+#define kFuncDashPrint              @"FuncDashPrint"
+#define kFuncFeedMode               @"FuncFeedMode"
+
